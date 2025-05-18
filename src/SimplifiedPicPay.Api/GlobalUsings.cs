@@ -4,3 +4,5 @@ global using SimplifiedPicPay.Api;
 global using SimplifiedPicPay.Api.Common.ExceptionHandlers;
 global using SimplifiedPicPay.Api.Common.Logic;
 global using SimplifiedPicPay.Api.Common.Helpers;
+global using SimplifiedPicPay.Api.Common.Handlers;
+global using Scrutor;

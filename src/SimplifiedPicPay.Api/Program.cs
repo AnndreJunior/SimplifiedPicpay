@@ -8,6 +8,11 @@ builder.Services.AddProblemDetails();
 
 builder.Services.AddDataContext(builder.Configuration);
 
+builder.Services.Scan(scan => scan.FromAssemblyOf<Program>()
+    .AddClasses(classes => classes.AssignableTo(typeof(IRequestHandler<,>)))
+        .AsImplementedInterfaces()
+        .WithScopedLifetime());
+
 // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
 builder.Services.AddOpenApi();
 
