@@ -6,6 +6,8 @@ builder.Services.AddSwaggerDocs();
 builder.Services.AddExceptionHandler<GlobalExceptionHandler>();
 builder.Services.AddProblemDetails();
 
+builder.Services.AddDataContext(builder.Configuration);
+
 // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
 builder.Services.AddOpenApi();
 
@@ -20,6 +22,8 @@ if (app.Environment.IsDevelopment())
 {
     app.MapOpenApi();
     app.UseSwaggerDocs();
+    app.ApplyMigrations();
+    app.SeedData();
 }
 else
 {
