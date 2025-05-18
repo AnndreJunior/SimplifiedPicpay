@@ -1,4 +1,4 @@
-namespace SimplifiedPicPay.Api.Extentions;
+namespace SimplifiedPicPay.Api.Extensions;
 
 public static class ServiceCollectionExtensions
 {
