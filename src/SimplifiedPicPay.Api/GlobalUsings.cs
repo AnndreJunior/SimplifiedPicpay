@@ -6,3 +6,4 @@ global using SimplifiedPicPay.Api.Common.Logic;
 global using SimplifiedPicPay.Api.Common.Helpers;
 global using SimplifiedPicPay.Api.Common.Handlers;
 global using Scrutor;
+global using SimplifiedPicPay.Api.Common.Entities;
